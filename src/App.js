@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @Author: your name
+ * @Date: 2021-06-19 16:53:41
+ * @LastEditTime: 2021-06-30 11:21:31
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /first-demo/src/App.js
+ */
+import './App.scss';
+import store from './store';
+import { Provider } from 'react-redux'
+import React, {
+  Fragment
+} from 'react'
+import {route} from './router'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+  <route />
+  </Provider>
+  )
+  
 }
 
-export default App;
+export default App
