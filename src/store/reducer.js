@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-19 17:35:01
- * @LastEditTime: 2021-06-30 14:30:59
+ * @LastEditTime: 2021-06-30 14:31:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /first-demo/src/store/reducer.js
@@ -24,7 +24,7 @@ export default (state = defaultState, action) => {
             newState.count++
             console.log(newState);
             return newState
-        case constants.REDUCE_COUNT:
+            case constants.REDUCE_COUNT:
             newState.count--
             return newState
         default:
